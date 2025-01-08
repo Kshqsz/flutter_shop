@@ -1,0 +1,30 @@
+name: shopping_app
+description: 仿照主流购物APP，包含商品展示、购物车、结算等页面功能
+
+publish_to: 'none' # 取消发布到 pub.dev
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 更新 http 的版本
+  http: ^1.2.2          # 使用兼容的版本
+  provider: ^6.0.0      # 状态管理库
+  cached_network_image: ^3.2.0  # 网络图片缓存库
+  flutter_svg: ^1.0.0   # 支持 SVG 图片（如果需要）
+  webview_flutter: ^4.0.6
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/   # 如果有本地图片资源
+    - assets/html/ 
